@@ -1,0 +1,41 @@
+import java.util.*;
+public class chatBot
+{
+     static void printMsg(String s1,String s2)
+     {
+          System.out.println("User: "+s1);
+          System.out.println("Bot: "+s2+"\n");
+     }
+     public static void main(String args[])
+     {
+          Scanner sc=new Scanner(System.in);
+          System.out.println("\nWelcome!I'm ChatBot!!\n");
+          while(true)
+          {
+               System.out.print("Ask me anything:-");
+               String s=sc.nextLine();
+               
+               String s1=s.toLowerCase();
+               if(s.equals("hi")||s.equals("hello"))
+                     printMsg(s,"Hello");
+               if(s.equals("who are you?")||s.equals("who are you"))
+                     printMsg(s,"I am bot");
+               if(s.equals("how are you?")||s.equals("how are you"))
+                     printMsg(s,"I am fine.Thanks for asking.");
+               if(s.equals("what is the full form of bot?"))
+                     printMsg(s,"Build,Operate,Transfer");
+               if(s.equals("what is my name?"))
+                     printMsg(s,"I'm sorry.I don't know your name.Would you like to share with me");
+               if(s.equals("any internship opportunities for btech students?"))
+                     printMsg(s,"yes! CodTech IT Solutions currently providing internships for btech students");
+               if(s.equals("thank you"))
+                     printMsg(s,"You're welcome!if you have any more questions,feel free to ask.");
+               if(s.equals("exit"))
+               {
+                     System.out.println("Exiting...");
+                     System.exit(0);
+               }
+           }
+      }
+}
+               
